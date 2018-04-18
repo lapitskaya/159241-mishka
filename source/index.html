@@ -54,7 +54,7 @@
     <article class="week-products__item week-product"> <!-- flex-container -->
 
       <div class="week-product__heading">
-        <h2 class="week-product__badge">Товар<br class="hide-mob"> недели</h2>
+        <h2 class="week-product__badge">Товар недели</h2>
 
         <h3 class="week-product__name page-subtitle">Вязаные корзинки</h3>
       </div>
@@ -81,14 +81,15 @@
         </div>
 
         <div class="week-product__picture">
-          <img src="">
+          <img src="http://placehold.it/260x315" alt="Продукт недели — вязаные корзинки">
           <!-- скорее всего, будем подгружать разные размеры картинки. либо на десктопе эту скрывать и показывать бэкграундом у флэкс контейнера -->
         </div>
 
         <div class="week-product__buy-info">
           <p class="week-product__price">Цена: 990&nbsp;руб.</p>
-          <button class="button">Заказать</button>
+          <a class="button" href="#popup-ancer">Заказать</a>
           <div class="product-popup">
+            <a name="popup-ancer"></a>
             <!-- еще не придумала как реализовать попап, скорее всего, нужно вынести отдельно и вызывать этот блок для каждого продукта, подставляя уникальные для каждого продукта значения в скрытое поле формы -->
             <h3 class="product-popup__title">Добавить в корзину</h3>
 
@@ -200,14 +201,14 @@
 <!-- footer start -->
 <footer class="main-footer wrapper">
   <ul class="main-footer__social">
-    <li class="main-footer__social-item main-footer__social-item--ig"><a class="main-footer__social-link" href="https://www.instagram.com/htmlacademy/" target="_blank"></a></li>
-    <li class="main-footer__social-item main-footer__social-item--fb"><a class="main-footer__social-link" href="https://www.facebook.com/htmlacademy" target="_blank"></a></li>
-    <li class="main-footer__social-item main-footer__social-item--tw"><a class="main-footer__social-link" href="https://twitter.com/htmlacademy_ru" target="_blank"></a></li>
+    <li class="main-footer__social-item main-footer__social-item--ig"><a class="main-footer__social-link" href="https://www.instagram.com/htmlacademy/" target="_blank">Мы в Instagram</a></li>
+    <li class="main-footer__social-item main-footer__social-item--fb"><a class="main-footer__social-link" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Facebook</a></li>
+    <li class="main-footer__social-item main-footer__social-item--tw"><a class="main-footer__social-link" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Twitter</a></li>
   </ul>
-  <hr>
+  <hr class="main-footer__hr">
   <a class="main-footer__copy copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
     <p class="copy-link__text">Разработано</p>
-    <img class="copy-link__logo" src="" alt="HTML Academy">
+    <img class="copy-link__logo" src="http://placehold.it/27x34" alt="HTML Academy">
   </a>
 </footer>
 <!-- footer end -->
