@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Мишка — каталог</title>
+</head>
+<body>
+
+<!-- header start -->
+<header class="main-header main-header--catalog">
+  <!-- pre-header start -->
+  <div class="preheader wrapper">
+
+    <div class="preheader__item">
+      <a class="preheader__logo" href="index.html"><img class="logo" src="http://placehold.it/172x70" width="87" height="35" alt="Мишка, логотип"></a>
+      <div class="burger"></div>
+      <!-- пока не решила как реализовывать бургер: svg с анимацией / спрайт с остальными иконками -->
+    </div>
+
+    <nav class="preheader__nav nav">
+      <ul>
+        <li class="nav__item preheader__item">Каталог товаров</li>
+        <li class="nav__item preheader__item"><a href="form.html">Вязание на заказ</a></li>
+      </ul>
+    </nav>
+
+    <div class="preheader__item preheader__item--search"><a href="">Поиск по сайту</a></div>
+    <!-- иконку поиска спрайтом, через псевдоэлемент ::before -->
+    <div class="preheader__item preheader__item--cart"><a href="">Корзина: пока пуста</a></div>
+    <!-- иконку корзины спрайтом, через псевдоэлемент ::before -->
+
+  </div>
+  <!-- pre-header end -->
+
+  <div class="main-header__content main-header__content--catalog wrapper">
+    <h1 class="main-header__title">Каталог товаров</h1>
+  </div>
+
+</header>
+<!-- header end -->
+
+
+<main class="wrapper">
+  <section class="catalog">
+
+    <article class="catalog__item catalog-item">
+      <a class="catalog-item__picture" href=""> <!-- возможно, семантичнее через figure и figcaption, но нужно еще подумать. без десктопного макета тяжело решить, не усложнит ли это жизнь -->
+        <img src="http://placehold.it/260x195" alt="Картинка товара">
+      </a>
+      <div class="catalog-item__content">
+        <a class="catalog-item__product-name" href="">
+          Зайчик-попрыгайчик
+        </a>
+        <div class="catalog-item__product-desc">
+          Рост 30&nbsp;см, вес 200&nbsp;г
+        </div>
+        <div class="catalog-item__buy-info">
+          <p class="catalog-item__price">1 200 руб.</p>
+          <a class="catalog-item__button" href="index.html#popup-ancer"><img class="catalog-item__cart-img" src="" alt="Положить в корзину"></a> <!-- Не уверена как лучше реализовать, возможно фоном спрайта -->
+        </div>
+      </div>
+    </article>
+
+    <hr class="catalog-item__hr">
+
+    <article class="catalog__item catalog-item">
+      <a class="catalog-item__picture" href="">
+        <img src="http://placehold.it/260x195" alt="Картинка товара">
+      </a>
+      <div class="catalog-item__content">
+        <a class="catalog-item__product-name" href="">
+          Корзинка для&nbsp;белья
+        </a>
+        <div class="catalog-item__product-desc">
+          Диаметр 15&nbsp;см, высота 10&nbsp;см
+        </div>
+        <div class="catalog-item__buy-info">
+          <p class="catalog-item__price">690 руб.</p>
+          <a class="catalog-item__button" href="index.html#popup-ancer"><img class="catalog-item__cart-img" src="" alt="Положить в корзину"></a>
+        </div>
+      </div>
+    </article>
+
+    <hr class="catalog-item__hr">
+
+    <article class="catalog__item catalog-item">
+      <a class="catalog-item__picture">
+        <img src="http://placehold.it/260x195" alt="Картинка товара">
+      </a>
+      <div class="catalog-item__content">
+        <a class="catalog-item__product-name" href="">
+          Большая корзинка для&nbsp;игрушек
+        </a>
+        <div class="catalog-item__product-desc">
+          Диаметр 30&nbsp;см, высота 30&nbsp;см
+        </div>
+        <div class="catalog-item__buy-info">
+          <p class="catalog-item__price">1 500 руб.</p>
+          <a class="catalog-item__button" href="index.html#popup-ancer"><img class="catalog-item__cart-img" src="" alt="Положить в корзину"></a>
+        </div>
+      </div>
+    </article>
+
+    <hr class="catalog-item__hr">
+
+    <article class="catalog__item catalog-video">
+      <div class="catalog-video__heading">
+        Процесс производства
+      </div>
+      <video class="catalog-video__video video" src="" poster="http://placehold.it/260x150"><img class="video__play" src="http://placehold.it/101x77" alt="Смотреть видео"></video>
+      <p class="catalog-video__desc">По просьбам наших любимых фолловеров мы сняли для&nbsp;вас подробное видео о&nbsp;том, как появляются наши товары.</p>
+      <a class="catalog-video__button button" href="form.html">Сделать заказ</a>
+    </article>
+
+  </section>
+</main>
+
+
+<!-- footer start -->
+<footer class="main-footer wrapper">
+  <ul class="main-footer__social">
+    <li class="main-footer__social-item main-footer__social-item--ig"><a class="main-footer__social-link" href="https://www.instagram.com/htmlacademy/" target="_blank">Мы в Instagram</a></li>
+    <li class="main-footer__social-item main-footer__social-item--fb"><a class="main-footer__social-link" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Facebook</a></li>
+    <li class="main-footer__social-item main-footer__social-item--tw"><a class="main-footer__social-link" href="https://twitter.com/htmlacademy_ru" target="_blank">Мы в Twitter</a></li>
+  </ul>
+  <hr class="main-footer__hr">
+  <a class="main-footer__copy copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+    <p class="copy-link__text">Разработано</p>
+    <img class="copy-link__logo" src="http://placehold.it/27x34" alt="HTML Academy">
+  </a>
+</footer>
+<!-- footer end -->
+
+</body>
+</html>
