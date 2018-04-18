@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Мишка — вязание на заказ</title>
+</head>
+<body>
+
+<!-- header start -->
+<header class="main-header main-header--catalog">
+  <!-- pre-header start -->
+  <div class="preheader wrapper">
+
+    <div class="preheader__item">
+      <div class="preheader__logo">
+        <a href="index.html"><img class="logo" src="http://placehold.it/172x70" width="87" height="35"
+                                  alt="Мишка, логотип"></a>
+      </div>
+      <div class="burger"></div>
+      <!-- пока не решила как реализовывать бургер: svg с анимацией / спрайт с остальными иконками -->
+    </div>
+
+    <nav class="preheader__nav">
+      <ul>
+        <li class="nav__item preheader__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="nav__item preheader__item">Вязание на заказ</li>
+      </ul>
+    </nav>
+
+    <div class="preheader__item preheader__item--search"><a href="">Поиск по сайту</a></div>
+    <!-- иконку поиска спрайтом, через псевдоэлемент ::before -->
+    <div class="preheader__item preheader__item--cart"><a href="">Корзина: пока пуста</a></div>
+    <!-- иконку корзины спрайтом, через псевдоэлемент ::before -->
+
+  </div>
+  <!-- pre-header end -->
+
+  <div class="main-header__content main-header__content--form wrapper">
+    <h1 class="main-header__title">Вязание на заказ</h1>
+  </div>
+
+</header>
+<!-- header end -->
+
+
+<main class="wrapper">
+  <section class="form-section">
+    <p class="form-section__text form-section__text--desc">Мы будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
+
+    <form class="form-section__form form" action="" method="post">
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">Тип</legend>
+        <ul class="form__radio-list">
+          <li class="form__radio-list-item">
+            <input class="form__radio" type="radio" id="interior" name="product-type" value="interior" checked><label class="form__radio-label" for="interior">Аксессуар для&nbsp;интерьера</label>
+          </li>
+          <li class="form__radio-list-item">
+            <input class="form__radio" type="radio" id="toy" name="product-type" value="toy"><label class="form__radio-label" for="toy">Детская игрушка</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">Цвет</legend>
+        <ul class="form__checkbox-list">
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="checkbox" name="white" id="white" checked><label class="form__checkbox-label" for="white">Белый</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="checkbox" name="gray" id="gray" checked><label class="form__checkbox-label" for="gray">Серый</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="checkbox" name="tiffany" id="tiffany"><label class="form__checkbox-label" for="tiffany">«Тиффани»</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="checkbox" name="black" id="black"><label class="form__checkbox-label" for="black">Черный</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="checkbox" name="pink" id="pink"><label class="form__checkbox-label" for="pink">Розовый</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="checkbox" name="orange" id="orange"><label class="form__checkbox-label" for="orange">Оранжевый</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">ФИО</legend>
+        <ul class="form__checkbox-list">
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="text" name="first-name" id="first-n" placeholder="Введите ваше имя*" required><label class="form__checkbox-label" for="first-n">Имя:</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="text" name="last-name" id="last-n" placeholder="Укажите фамилию*" required><label class="form__checkbox-label" for="last-n">Фамилия:</label>
+          </li>
+          <li class="form__checkbox-list-item">
+            <input class="form__checkbox" type="text" name="fathers-name" id="fathers-n" placeholder="Отчество, если желаете"><label class="form__checkbox-label" for="fathers-n">Отчество:</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">Тел</legend>
+        <input class="form__tel" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">E-mail</legend>
+        <input class="form__email" type="email" name="email" placeholder="Ваш Email*" required>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-legend">Доп</legend>
+        <textarea class="form__textarea" name="additional-info" rows="6">Опишите все ваши пожелания к заказу</textarea>
+      </fieldset>
+      <p class="form-section__text form__note">*Поля обязательны для заполнения</p>
+
+      <input class="form__button button" type="submit" value="Отправить заказ">
+
+    </form>
+
+  </section>
+</main>
+
+
+<!-- footer start -->
+<footer class="main-footer wrapper">
+  <ul class="main-footer__social">
+    <li class="main-footer__social-item main-footer__social-item--ig"><a class="main-footer__social-link"
+                                                                         href="https://www.instagram.com/htmlacademy/"
+                                                                         target="_blank"></a></li>
+    <li class="main-footer__social-item main-footer__social-item--fb"><a class="main-footer__social-link"
+                                                                         href="https://www.facebook.com/htmlacademy"
+                                                                         target="_blank"></a></li>
+    <li class="main-footer__social-item main-footer__social-item--tw"><a class="main-footer__social-link"
+                                                                         href="https://twitter.com/htmlacademy_ru"
+                                                                         target="_blank"></a></li>
+  </ul>
+  <hr>
+  <a class="main-footer__copy copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+    <p class="copy-link__text">Разработано</p>
+    <img class="copy-link__logo" src="" alt="HTML Academy">
+  </a>
+</footer>
+<!-- footer end -->
+
+</body>
+</html>
