@@ -11,16 +11,16 @@
 <header class="main-header main-header--index">
 
   <!-- pre-header start -->
-  <div class="preheader wrapper">
+  <div class="preheader">
 
-    <div class="preheader__item">
-      <a class="preheader__logo"><img class="logo" src="http://placehold.it/172x70" width="87" height="35" alt="Мишка, логотип"></a>
+    <div class="preheader__item preheader__item--logo">
+      <a class="preheader__logo"><img class="logo" src="img/logo-mobile.svg" width="87" height="35" alt="Мишка, логотип"></a>
       <div class="burger"></div>
       <!-- пока не решила как реализовывать бургер: svg с анимацией / спрайт с остальными иконками -->
     </div>
 
     <nav class="preheader__nav nav">
-      <ul>
+      <ul class="nav__list">
         <li class="nav__item preheader__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="nav__item preheader__item"><a href="form.html">Вязание на заказ</a></li>
       </ul>
@@ -34,13 +34,15 @@
   </div>
   <!-- pre-header end -->
 
-  <div class="main-header__content main-header__content--index wrapper">
-    <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+  <div class="main-header__content main-header__content--index">
+    <div class="main-header__title-wrapper">
+      <h1 class="main-header__title main-header__title--index">Милые штуки ручной работы для&nbsp;дома</h1>
+    </div>
     <nav class="main-header__products">
-      <ul>
-        <li class="main-header__products-item main-header__products-item--interior"><a href="">Предметы интерьера</a>
+      <ul class="main-header__products-list">
+        <li class="main-header__products-item main-header__products-item--interior"><a class="main-header__product-link" href="">Предметы интерьера</a>
         </li>
-        <li class="main-header__products-item main-header__products-item--toys"><a href="">Детские игрушки</a></li>
+        <li class="main-header__products-item main-header__products-item--toys"><a class="main-header__product-link" href="">Детские игрушки</a></li>
       </ul>
     </nav>
   </div>
@@ -49,9 +51,9 @@
 <!-- header end -->
 
 
-<main class="wrapper">
+<main>
   <!-- week-products section start -->
-  <section class="week-products">
+  <section class="week-products wrapper">
     <article class="week-products__item week-product"> <!-- flex-container -->
 
       <div class="week-product__heading">
@@ -82,7 +84,7 @@
         </div>
 
         <div class="week-product__picture">
-          <img src="http://placehold.it/260x315" alt="Продукт недели — вязаные корзинки">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Продукт недели — вязаные корзинки">
           <!-- скорее всего, будем подгружать разные размеры картинки. либо на десктопе эту скрывать и показывать бэкграундом у флэкс контейнера -->
         </div>
 
@@ -118,7 +120,7 @@
   <!-- week-products section end -->
 
   <!-- about-us section start -->
-  <section class="about-us">
+  <section class="about-us wrapper">
     <h2 class="about-us__title page-subtitle">Коротко о&nbsp;нас:</h2>
     <ul class="about-us__features">
       <li class="about-us__features-item">
@@ -177,7 +179,7 @@
 
   <!-- contacts section start -->
   <section class="contacts wrapper">
-    <h2 class="contacts__title">Отзывы</h2>
+    <h2 class="contacts__title">Контакты</h2>
     <table class="contacts__details">
       <tr class="contacts__details-row">
         <td class="contacts__details-data contacts__details-data--param">e-mail:</td>
@@ -193,7 +195,7 @@
       </tr>
     </table>
     <div class="contacts__map"></div> <!-- вставить карту гугл -->
-    <a class="button" href="mailto:info@mimimishkashop.ru" target="_blank">Написать</a>
+    <a class="button" href="mailto:info@mimimishkashop.ru" target="_blank">Напишите нам</a>
   </section>
   <!-- contacts section end -->
 </main>
@@ -209,7 +211,7 @@
   <hr class="main-footer__hr">
   <a class="main-footer__copy copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
     <p class="copy-link__text">Разработано</p>
-    <img class="copy-link__logo" src="http://placehold.it/27x34" alt="HTML Academy">
+    <img class="copy-link__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
   </a>
 </footer>
 <!-- footer end -->

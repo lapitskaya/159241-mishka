@@ -10,16 +10,16 @@
 <!-- header start -->
 <header class="main-header main-header--catalog">
   <!-- pre-header start -->
-  <div class="preheader wrapper">
+  <div class="preheader">
 
-    <div class="preheader__item">
-      <a class="preheader__logo" href="index.html"><img class="logo" src="http://placehold.it/172x70" width="87" height="35" alt="Мишка, логотип"></a>
+    <div class="preheader__item preheader__item--logo">
+      <a class="preheader__logo" href="index.html"><img class="logo" src="img/logo-mobile.svg" width="87" height="35" alt="Мишка, логотип"></a>
       <div class="burger"></div>
       <!-- пока не решила как реализовывать бургер: svg с анимацией / спрайт с остальными иконками -->
     </div>
 
     <nav class="preheader__nav nav">
-      <ul>
+      <ul class="nav__list">
         <li class="nav__item preheader__item">Каталог товаров</li>
         <li class="nav__item preheader__item"><a href="form.html">Вязание на заказ</a></li>
       </ul>
@@ -34,7 +34,9 @@
   <!-- pre-header end -->
 
   <div class="main-header__content main-header__content--catalog wrapper">
-    <h1 class="main-header__title">Каталог товаров</h1>
+    <div class="main-header__title-wrapper">
+      <h1 class="main-header__title main-header__title--catalog">Каталог товаров</h1>
+    </div>
   </div>
 
 </header>
@@ -46,7 +48,7 @@
 
     <article class="catalog__item catalog-item">
       <a class="catalog-item__picture" href=""> <!-- возможно, семантичнее через figure и figcaption, но нужно еще подумать. без десктопного макета тяжело решить, не усложнит ли это жизнь -->
-        <img src="http://placehold.it/260x195" alt="Картинка товара">
+        <img src="img/photo-hare-mobile@1x.jpg" alt="Картинка товара">
       </a>
       <div class="catalog-item__content">
         <a class="catalog-item__product-name" href="">
@@ -66,7 +68,7 @@
 
     <article class="catalog__item catalog-item">
       <a class="catalog-item__picture" href="">
-        <img src="http://placehold.it/260x195" alt="Картинка товара">
+        <img src="img/photo-bowl-mobile@1x.jpg" alt="Картинка товара">
       </a>
       <div class="catalog-item__content">
         <a class="catalog-item__product-name" href="">
@@ -86,7 +88,7 @@
 
     <article class="catalog__item catalog-item">
       <a class="catalog-item__picture">
-        <img src="http://placehold.it/260x195" alt="Картинка товара">
+        <img src="img/photo-toys-mobile@1x.jpg" alt="Картинка товара">
       </a>
       <div class="catalog-item__content">
         <a class="catalog-item__product-name" href="">
@@ -108,7 +110,7 @@
       <div class="catalog-video__heading">
         Процесс производства
       </div>
-      <video class="catalog-video__video video" src="" poster="http://placehold.it/260x150"><img class="video__play" src="http://placehold.it/101x77" alt="Смотреть видео"></video>
+      <video class="catalog-video__video video" src="" poster="img/video-mobile@1x.jpg"><img class="video__play" src="http://placehold.it/101x77" alt="Смотреть видео"></video>
       <p class="catalog-video__desc">По просьбам наших любимых фолловеров мы сняли для&nbsp;вас подробное видео о&nbsp;том, как появляются наши товары.</p>
       <a class="catalog-video__button button" href="form.html">Сделать заказ</a>
     </article>
@@ -127,7 +129,7 @@
   <hr class="main-footer__hr">
   <a class="main-footer__copy copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
     <p class="copy-link__text">Разработано</p>
-    <img class="copy-link__logo" src="http://placehold.it/27x34" alt="HTML Academy">
+    <img class="copy-link__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
   </a>
 </footer>
 <!-- footer end -->
