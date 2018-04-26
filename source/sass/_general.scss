@@ -1,15 +1,13 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensans.woff2') format('woff2'),
-  url('../fonts/opensans.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/opensansbold.woff2') format('woff2'),
-  url('../fonts/opensansbold.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -17,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: OpenSans, Verdana, sans-serif;
+  font-family: "OpenSans", "Verdana", sans-serif;
   font-weight: 400;
 }
 
