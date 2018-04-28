@@ -1,0 +1,23 @@
+.preheader {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preheader__nav {
+  flex-basis: 100%;
+}
+
+.preheader__item {
+  flex-basis: 100%;
+  min-height: 79px;
+  padding-left: 76px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+}
+
+.preheader__item--logo {
+  justify-content: center;
+  padding-left: 0;
+}

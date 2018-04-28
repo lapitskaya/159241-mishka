@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка — вязание на заказ</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- header start -->
-<header class="main-header main-header--catalog">
+<header class="main-header main-header--form">
   <!-- pre-header start -->
-  <div class="preheader wrapper">
+  <div class="preheader">
 
-    <div class="preheader__item">
-      <a class="preheader__logo" href="index.html"><img class="logo" src="http://placehold.it/172x70" width="87" height="35" alt="Мишка, логотип"></a>
+    <div class="preheader__item preheader__item--logo">
+      <a class="preheader__logo" href="index.html"><img class="logo" src="img/logo-mobile.svg" width="87" height="35" alt="Мишка, логотип"></a>
       <div class="burger"></div>
       <!-- пока не решила как реализовывать бургер: svg с анимацией / спрайт с остальными иконками -->
     </div>
 
     <nav class="preheader__nav nav">
-      <ul>
+      <ul class="nav__list">
         <li class="nav__item preheader__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="nav__item preheader__item">Вязание на заказ</li>
       </ul>
@@ -33,7 +34,9 @@
   <!-- pre-header end -->
 
   <div class="main-header__content main-header__content--form wrapper">
-    <h1 class="main-header__title">Вязание на заказ</h1>
+    <div class="main-header__title-wrapper">
+      <h1 class="main-header__title main-header__title--form">Вязание на заказ</h1>
+    </div>
   </div>
 
 </header>
@@ -131,7 +134,7 @@
   <hr class="main-footer__hr">
   <a class="main-footer__copy copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
     <p class="copy-link__text">Разработано</p>
-    <img class="copy-link__logo" src="http://placehold.it/27x34" alt="HTML Academy">
+    <img class="copy-link__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
   </a>
 </footer>
 <!-- footer end -->
